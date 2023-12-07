@@ -1,0 +1,338 @@
+/*
+Color verde  : #44D62C
+Color oscuro : #141414 
+*/
+
+/*-----------------------Estilos generales-----------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #141414;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*-----------------------Estilos contenedor-----------------------*/
+.contenedor {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*-----------------------Estilos navegacion-----------------------*/
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+.logo {
+    width: 50px;
+}
+
+.contenedor-links ul li {
+    display: inline;
+}
+
+.contenedor-links ul li a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    margin: 0 10px;
+}
+
+.hover-links:hover {
+    border-color: #44D62C;
+}
+
+/*-----------------------Estilos catalogo-----------------------*/
+.titulo {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.contenedor-categorias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.tarjeta-categoria {
+    width: 20%;
+    height: 320px;
+    background-color: black;
+    border-radius: 8px;
+    text-align: center;
+    margin: 30px 20px 40px 20px;
+    transition: 0.2s;
+}
+
+.tarjeta-categoria:hover {
+    transform: translateY(-3px);
+}
+
+.tarjeta-categoria img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.tarjeta-categoria a {
+    display: block;
+    text-decoration: none;
+    background-color: black;
+    color: #44D62C;
+    padding: 6px;
+    border: 2px solid #44D62C;
+    border-radius: 10px;
+    width: 150px;
+    margin: 15px auto;
+}
+
+.tarjeta-categoria a:hover {
+    box-shadow: 0 0 8px #44D62C;
+}
+
+/*-----------------------Estilos destacado-----------------------*/
+.contenedor-destacados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.tarjeta-destacado {
+    background-color: #222222;
+    width: 20%;
+    height: 380px;
+    border-radius: 8px;
+    margin: 30px 20px 40px 20px;
+}
+
+.tarjeta-destacado .fondo {
+    background-color: #111111;
+    border-radius: 8px 8px 0 0;
+}
+
+.tarjeta-destacado img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.tarjeta-destacado .producto-descripcion {
+    padding: 10px;
+}
+
+.tarjeta-destacado h4 {
+    font-size: 16px;
+}
+
+.tarjeta-destacado p{
+    font-size: 14px;
+}
+
+.comprar-producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.comprar-producto span {
+    font-size: 14px;
+}
+
+.comprar-producto a {
+    padding: 6px;
+    background-color: #44D62C;
+    text-decoration: none;
+    color: #141414;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.comprar-producto a:hover {
+    box-shadow: 0 0 6px #44D62C;
+}
+
+/*-----------------------Estilos formulario-----------------------*/
+.contenedor-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+    margin-bottom: 40px;
+}
+.mapa {
+    width: 40%;
+}
+
+.mapa iframe {
+    width: 100%;
+}
+
+.formulario {
+    background-color: #222222;
+    padding: 20px;
+    width: 40%;
+}
+
+.formulario form {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+.formulario-dato {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid #111111;
+    padding: 8px;
+    color: white;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.formulario textarea {
+    background-color: inherit;
+    color: white;
+    width: 90%;
+}
+
+.formulario-dato:focus {
+    border-color: #44D62C;
+}
+
+.boton-enviar {
+    display: block;
+    width: 150px;
+    background-color: #44D62C;
+    border: 2px solid #44D62C;
+    color: #141414;
+    padding: 6px;
+    border-radius: 10px;
+    margin: 20px auto;
+    font-weight: 500;
+}
+
+.boton-enviar:hover {
+    box-shadow: 0 0 6px #44D62C;
+}
+/*-------------------------Footer--------------------------------*/
+footer {
+    background-color: black;
+    height: 60px;
+}
+
+.pie-pagina {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+.pie-pagina p {
+    margin: auto 10px;
+}
+
+.pie-pagina a {
+    width: 8px;
+    height: 8px;
+    text-decoration: none;
+    margin: auto 10px;
+}
+
+.pie-pagina a img {
+    padding: 10px;
+    background-color: #222222;
+    border-radius: 10px;
+}
+
+.pie-pagina a img:hover {
+    box-shadow: 0 0 6px #44D62C;
+}
+
+
+/*-----------------------Estilos responsive-----------------------*/
+@media screen and (max-width: 1000px) {
+    .tarjeta-categoria {
+        width: 40%;
+    }
+
+    .tarjeta-destacado {
+        width: 40%;
+    }
+
+    .comprar-producto {
+        margin: 30px auto;
+    }
+
+    .tarjeta-destacado img {
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navegacion {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .tarjeta-categoria {
+        width: 90%;
+    }
+
+    .tarjeta-destacado {
+        width: 100%;
+    }
+
+    .tarjeta-destacado img {
+        height: 190px;
+    }
+
+    .comprar-producto {
+        margin: 20px auto;
+    }
+
+    .mapa {
+        display: none;
+    }
+
+    .formulario {
+        width: 90%;
+    }
+
+    footer {
+        height: auto;
+        padding: 10px;
+    }
+
+    .pie-pagina {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pie-pagina p {
+        margin: 10px auto;
+    }
+
+    .pie-pagina a {
+        margin: 10px auto;
+    }
+}

@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #141414;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+}
+
+.contenedor-links ul li {
+    display: inline;
+}
+
+.contenedor-links ul li a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    margin: 0 10px;
+}
+
+.contenedor-links ul li img {
+    width: 14px;
+}
+
+.hover-links:hover {
+    border-color: #44D62C;
+}
+
+
+/*----------------------------Venta de producto--------------*/
+.perfil-venta {
+    width: 80%;
+    height: 80vh;
+    margin: 20px auto;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil-venta .imagen {
+    width: 50%;
+    height: 100%;
+}
+
+.perfil-venta .imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil-venta .datos {
+    width: 50%;
+    padding: 20px;
+}
+
+.perfil-venta .datos h1 {
+    font-size: 30px;
+    text-align: left;
+}
+
+.perfil-venta .datos hr {
+    margin: 10px 0;
+}
+
+.perfil-venta .datos input {
+    padding: 6px;
+    display: block;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 10px 0 20px 0;
+}
+
+.perfil-venta .datos button {
+    padding: 10px;
+    width: 30%;
+    border: none;
+    border-radius: 10px;
+    background-color: #44D62C;
+}
+
+.perfil-venta .datos button:hover {
+    box-shadow: 0 0 6px #44D62C;;
+}
+
+/*----------------------Responsive-----------------*/
+@media screen and (max-width: 800px) {
+    .navegacion {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .contenedor-links ul li a {
+        font-size: 11px;
+    }
+
+    .perfil-venta {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .perfil-venta .imagen {
+        width: 100%;
+    }
+
+    .perfil-venta .datos {
+        width: 100%;
+    }
+}

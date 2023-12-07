@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Comprar</title>
+
+    <!-----------------------------------------Links---------------------------------------->
+	<link rel="stylesheet" href="css/estilos-comprar.css">
+    <!-- Logo empresa -->
+    <link rel="shortcut icon" href="" type="image/vnd.microsoft.png" />
+
+    <!---------------------------------------Scripts---------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/proceso.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+	<!-- Menú -->
+	<header>
+        <nav class="navegacion contenedor" id="inicio">
+            <div class="contenedor-logo">
+                <a href="#"><img src="" alt="" class="logo">Logo</a> 
+            </div>
+            <div class="contenedor-links">
+                <ul>
+                    <li> <a href="index.html" class="hover-links">Inicio</a> </li>
+                    <li> <a href="laptop.html" class="hover-links">Laptops</a> </li>
+                    <li> <a href="accesorios.html" class="hover-links">Accesorios</a> </li>
+                    <li> <a href="computadoras.html" class="hover-links">Computadoras</a> </li>
+                    <li> <a href="componentes.html" class="hover-links">Componentes</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+	<!-- Formulario de compra -->
+    <section class="contenedor">
+    	<div class="perfil-venta">
+    		<div class="imagen">
+    			<img src="img-productos/producto0.jpg" alt="">
+    		</div>
+    		<div class="datos">
+    			<h1>Pc Gamer Ryzen 5 5600g, 16gb Ram, Ssd 500gb, 24 PuLG</h1>
+    			<hr>
+    			<p>
+    				✔ Envio gratis a todo el país
+    			</p>
+				<hr>
+				<label for="xpre">Precio:</label>
+    			<input type="text" value=2499 readonly id="xpre">
+    			<label for="xcan">Cantidad:</label>
+    			<input type="number" min="1" id="xcan" onchange="hallarTotal()">
+    			<label for="xtot">Total:</label>
+    			<input type="text" value="0.00" readonly id="xtot">
+    			<button onclick="comprarProducto()">
+    				Comprar
+    			</button>
+    		</div>
+    	</div>
+    </section>
+</body>
+</html>

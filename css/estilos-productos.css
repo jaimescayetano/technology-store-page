@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #141414;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*-------------------------Barra de navegacion-------------------*/
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+}
+
+.contenedor-links ul li {
+    display: inline;
+}
+
+.contenedor-links ul li a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    margin: 0 10px;
+}
+
+.contenedor-links ul li img {
+    width: 14px;
+}
+
+.hover-links:hover {
+    border-color: #44D62C;
+}
+
+/*------------------Seccion principal----------------------*/
+.contenedor h1 {
+    font-size: 40px;
+    margin: 60px auto 30px auto;
+    text-align: center;
+}
+
+.caja {
+    width: 30%;
+    height: 40px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px auto 60px auto;
+}
+
+.caja i {
+    font-size: 20px;
+    color: #777;
+}
+
+.caja input {
+    flex: 1;
+    width: 80%;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+/*-----------------------Seccion de productos-----------------------*/
+
+.contenedor-producto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.tarjeta-producto {
+    background-color: #222222;
+    width: 20%;
+    height: 380px;
+    border-radius: 8px;
+    margin: 30px 20px 40px 20px;
+}
+
+.tarjeta-producto .fondo {
+    background-color: #111111;
+    border-radius: 8px 8px 0 0;
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.tarjeta-producto .producto-descripcion {
+    padding: 10px;
+}
+
+.tarjeta-producto h4 {
+    font-size: 16px;
+}
+
+.tarjeta-producto p{
+    font-size: 14px;
+}
+
+.comprar-producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.comprar-producto span {
+    font-size: 14px;
+}
+
+.comprar-producto a {
+    padding: 6px;
+    background-color: #44D62C;
+    text-decoration: none;
+    color: #141414;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.comprar-producto a:hover {
+    box-shadow: 0 0 6px #44D62C;
+}
+
+/*----------------------------footer--------------------------*/
+footer {
+    background-color: black;
+    height: 60px;
+}
+
+.pie-pagina {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+.pie-pagina p {
+    margin: auto 10px;
+}
+
+.pie-pagina a {
+    width: 8px;
+    height: 8px;
+    text-decoration: none;
+    margin: auto 10px;
+}
+
+.pie-pagina a img {
+    padding: 10px;
+    background-color: #222222;
+    border-radius: 10px;
+}
+
+.pie-pagina a img:hover {
+    box-shadow: 0 0 6px #44D62C;
+}
+
+
+/*--------------------------Responsive---------------------------*/
+@media screen and (max-width: 1100px) {
+    .tarjeta-producto {
+        width: 25%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .tarjeta-producto {
+        width: 40%;
+    }
+
+    .comprar-producto {
+        margin: 30px auto;
+    }
+
+    .tarjeta-destacado img {
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .navegacion {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .caja {
+        width: 60%;
+    }
+
+    .contenedor-producto {
+        justify-content: center;
+    }
+
+    .tarjeta-producto {
+        width: 70%;
+    }
+
+    .tarjeta-producto img {
+        height: 190px;
+    }
+
+    .comprar-producto {
+        margin: 20px auto;
+    }
+
+    footer {
+        height: auto;
+        padding: 10px;
+    }
+
+    .pie-pagina {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pie-pagina p {
+        margin: 10px auto;
+    }
+
+    .pie-pagina a {
+        margin: 10px auto;
+    }
+}
